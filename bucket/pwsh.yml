@@ -1,0 +1,38 @@
+version: 7.2.1
+description: PowerShell Core. Task automation and configuration management framework/tool.
+homepage: https://github.com/PowerShell/PowerShell
+license:
+  identifier: MIT
+  url: https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt
+changelog: https://github.com/PowerShell/PowerShell/releases/tag/v7.2.1
+architecture:
+  64bit:
+    url: https://github.com/PowerShell/PowerShell/releases/download/v7.2.1/PowerShell-7.2.1-linux-x64.tar.gz
+    hash: 337d9864799ad09b46d261071b9f835f69f078814409bc2681f4cc2857b6bda5
+  arm64:
+    url: https://github.com/PowerShell/PowerShell/releases/download/v7.2.1/PowerShell-7.2.1-linux-arm64.tar.gz
+    hash: f0d6c9c36d69e1466e5a9412085ef52cafd10b73f862d29479b806279a2975f4
+pre_install: Test-Persistence 'Microsoft.PowerShell_profile.ps1', 'profile.ps1'
+bin:
+- - pwsh
+  - pwsh
+  - -NoLogo
+shortcuts:
+- - pwsh
+  - PowerShell Core
+  - -NoLogo
+persist:
+- Microsoft.PowerShell_profile.ps1
+- profile.ps1
+checkver: github
+autoupdate:
+  archive: true
+  changelog: https://github.com/PowerShell/PowerShell/releases/tag/v$version
+  architecture:
+    64bit:
+      url: https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-linux-x64.tar.gz
+    arm64:
+      url: https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-linux-arm64.tar.gz
+  hash:
+    url: https://github.com/PowerShell/PowerShell/releases/tag/v$version
+    regex: $basename\s*<ul>\s*<li>$sha256

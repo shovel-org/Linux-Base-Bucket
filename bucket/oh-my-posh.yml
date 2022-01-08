@@ -1,0 +1,28 @@
+version: 6.43.0
+description: A prompt theme engine for any shell
+homepage: https://ohmyposh.dev
+license:
+  identifier: GPL-3.0-only
+  url: https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/COPYING
+changelog: https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v6.43.0
+architecture:
+  64bit:
+    url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v6.43.0/posh-linux-amd64#/oh-my-posh
+    hash: 4de1e803e2f781fa1385820a3dfadb2f7bb0c0787708609ff3bbf546e6acb974
+  arm64:
+    url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v6.43.0/posh-linux-arm64#/oh-my-posh
+    hash: b8814d0a4c48a73ca8af1c64fa8cdea748ee825773c22c18552a5a1ece6188ac
+bin: oh-my-posh
+persist: themes
+checkver:
+  github: https://github.com/JanDeDobbeleer/oh-my-posh
+autoupdate:
+  changelog: https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v$version
+  architecture:
+    64bit:
+      url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v$version/posh-linux-amd64#/oh-my-posh
+    arm64:
+      url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v$version/posh-linux-arm64#/oh-my-posh
+  hash:
+    url: $url.sha256
+    regex: $sha256
