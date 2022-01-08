@@ -1,17 +1,17 @@
-version: 7.2.1
+version: 7.3.0-preview.1
 description: PowerShell Core. Task automation and configuration management framework/tool.
 homepage: https://github.com/PowerShell/PowerShell
 license:
   identifier: MIT
   url: https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt
-changelog: https://github.com/PowerShell/PowerShell/releases/tag/v7.2.1
+changelog: https://github.com/PowerShell/PowerShell/releases/tag/v7.3.0-preview.1
 architecture:
   64bit:
-    url: https://github.com/PowerShell/PowerShell/releases/download/v7.2.1/PowerShell-7.2.1-linux-x64.tar.gz
-    hash: 337d9864799ad09b46d261071b9f835f69f078814409bc2681f4cc2857b6bda5
+    url: https://github.com/PowerShell/PowerShell/releases/download/v7.3.0-preview.1/PowerShell-7.3.0-preview.1-linux-x64.tar.gz
+    hash: f04c73fb5eb6bb96f1ff2b524d0d0c18672e1125aece8aa98e0c71e18fc0f1ea
   arm64:
-    url: https://github.com/PowerShell/PowerShell/releases/download/v7.2.1/PowerShell-7.2.1-linux-arm64.tar.gz
-    hash: f0d6c9c36d69e1466e5a9412085ef52cafd10b73f862d29479b806279a2975f4
+    url: https://github.com/PowerShell/PowerShell/releases/download/v7.3.0-preview.1/PowerShell-7.3.0-preview.1-linux-arm64.tar.gz
+    hash: d05720a02fb2caef407d2389aa260badafed7a2f8a5ed890d3f1db05252399b9
 pre_install: Test-Persistence 'Microsoft.PowerShell_profile.ps1', 'profile.ps1'
 bin:
 - - pwsh
@@ -24,7 +24,9 @@ shortcuts:
 persist:
 - Microsoft.PowerShell_profile.ps1
 - profile.ps1
-checkver: github
+checkver:
+  url: https://www.github.com/PowerShell/PowerShell/releases
+  regex: tree/v([\d.]+-[\w.]+)
 autoupdate:
   archive: true
   changelog: https://github.com/PowerShell/PowerShell/releases/tag/v$version
