@@ -1,0 +1,31 @@
+version: 4.6.0
+description: Let's Encrypt client
+homepage: https://go-acme.github.io/lego/
+license:
+  identifier: MIT
+  url: https://github.com/go-acme/lego/blob/master/LICENSE
+changelog: https://github.com/go-acme/lego/releases/tag/v4.6.0
+architecture:
+  64bit:
+    url: https://github.com/go-acme/lego/releases/download/v4.6.0/lego_v4.6.0_linux_amd64.tar.gz
+    hash: c0c408788cdec96a4697300211c3944a050bb3d62ed3525a5409c136c94e09cb
+  32bit:
+    url: https://github.com/go-acme/lego/releases/download/v4.6.0/lego_v4.6.0_linux_386.tar.gz
+    hash: 12ea2b9b67ad54f3fe53b5a47c934c2caf4c2d85befa33e3b8c4b1791e45dfdf
+  arm64:
+    url: https://github.com/go-acme/lego/releases/download/v4.6.0/lego_v4.6.0_linux_arm64.tar.gz
+    hash: f5cecda8880d04ffc394049852a797ec120aebf0203ab0f1b877a0cd89bb0b3e
+bin: lego
+checkver:
+  github: https://github.com/go-acme/lego
+autoupdate:
+  changelog: https://github.com/go-acme/lego/releases/tag/v$version
+  architecture:
+    64bit:
+      url: https://github.com/go-acme/lego/releases/download/v$version/lego_v$version_linux_amd64.tar.gz
+    32bit:
+      url: https://github.com/go-acme/lego/releases/download/v$version/lego_v$version_linux_386.tar.gz
+    arm64:
+      url: https://github.com/go-acme/lego/releases/download/v$version/lego_v$version_linux_arm64.tar.gz
+  hash:
+    url: $baseurl/lego_$version_checksums.txt
