@@ -1,4 +1,4 @@
-version: 1.57.0
+version: 1.58.1
 description: Sync files and directories to and from mulitple cloud / FTP / HTTP hosters.
 homepage: https://rclone.org
 license:
@@ -6,17 +6,17 @@ license:
   url: https://github.com/rclone/rclone/blob/master/COPYING
 architecture:
   64bit:
-    url: https://downloads.rclone.org/v1.57.0/rclone-v1.57.0-linux-amd64.zip
-    hash: 49191e1156cf0c41d9e6af35bd31cf2a2884107483823e17671323717905e771
-    extract_dir: rclone-v1.57.0-linux-amd64
+    url: https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-amd64.zip
+    hash: 135a4a0965cb58eafb07941f2013a82282c44c28fea9595587778e969d9ed035
+    extract_dir: rclone-v1.58.1-linux-amd64
   32bit:
-    url: https://downloads.rclone.org/v1.57.0/rclone-v1.57.0-linux-386.zip
-    hash: d7f98934b1bf71960575a07e022836d6d9d68919885a0766b52c50d30cfa926c
-    extract_dir: rclone-v1.57.0-linux-386
+    url: https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-386.zip
+    hash: df947c0f47dd44a006df037bd603a476f2e3d20eebf14b695c6b1a6327550ebc
+    extract_dir: rclone-v1.58.1-linux-386
   arm64:
-    url: https://downloads.rclone.org/v1.57.0/rclone-v1.57.0-linux-arm64.zip
-    hash: 7ca4bec4cc5f4ba72c863976da33085689083a04b3ee1f7bd37e08a278ca474f
-    extract_dir: rclone-v1.57.0-linux-arm64
+    url: https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-arm64.zip
+    hash: b1abf65d6e9817ce5e2be532edeeb45cbd9ad671e8325d9d145e4d3c3ad41715
+    extract_dir: rclone-v1.58.1-linux-arm64
 pre_install: Test-Persistence 'rclone.conf'
 bin: rclone
 persist: rclone.conf
