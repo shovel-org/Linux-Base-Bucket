@@ -1,17 +1,17 @@
-version: 7.3.0-preview.1
+version: 7.3.0-preview.4
 description: PowerShell Core. Task automation and configuration management framework/tool.
 homepage: https://github.com/PowerShell/PowerShell
 license:
   identifier: MIT
   url: https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt
-changelog: https://github.com/PowerShell/PowerShell/releases/tag/v7.3.0-preview.1
+changelog: https://github.com/PowerShell/PowerShell/releases/tag/v7.3.0-preview.4
 architecture:
   64bit:
-    url: https://github.com/PowerShell/PowerShell/releases/download/v7.3.0-preview.1/PowerShell-7.3.0-preview.1-linux-x64.tar.gz
-    hash: f04c73fb5eb6bb96f1ff2b524d0d0c18672e1125aece8aa98e0c71e18fc0f1ea
+    url: https://github.com/PowerShell/PowerShell/releases/download/v7.3.0-preview.4/PowerShell-7.3.0-preview.4-linux-x64.tar.gz
+    hash: 6949581ce64715396f50559e39adce80223f0ba3c0b54ed5f0cbe4206242bba7
   arm64:
-    url: https://github.com/PowerShell/PowerShell/releases/download/v7.3.0-preview.1/PowerShell-7.3.0-preview.1-linux-arm64.tar.gz
-    hash: d05720a02fb2caef407d2389aa260badafed7a2f8a5ed890d3f1db05252399b9
+    url: https://github.com/PowerShell/PowerShell/releases/download/v7.3.0-preview.4/PowerShell-7.3.0-preview.4-linux-arm64.tar.gz
+    hash: ffef3ebb2538af578161a9cd7f0f706060467561efe18c3524f3ce424c2ae170
 pre_install: Test-Persistence 'Microsoft.PowerShell_profile.ps1', 'profile.ps1'
 bin:
 - - pwsh
