@@ -1,24 +1,24 @@
-version: 1.17.6
+version: 1.18.3
 description: Programming language that makes it easy to build simple, reliable, and efficient software.
 homepage: https://golang.org
 license:
   identifier: BSD-3-Clause
   url: https://golang.org/LICENSE
-changelog: https://golang.org/doc/devel/release#go1.17
+changelog: https://golang.org/doc/devel/release#go1.18
 notes:
 - "Your GOROOT has been set to: '$dir'"
 - You can run 'go env GOROOT' to view this at any time.
 - '"$env:HOME\go\bin" has been added to your PATH.'
 architecture:
   64bit:
-    url: https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz
-    hash: 231654bbf2dab3d86c1619ce799e77b03d96f9b50770297c8f4dff8836fc8ca2
+    url: https://dl.google.com/go/go1.18.3.linux-amd64.tar.gz
+    hash: 956f8507b302ab0bb747613695cdae10af99bbd39a90cae522b7c0302cc27245
   32bit:
-    url: https://dl.google.com/go/go1.17.6.linux-386.tar.gz
-    hash: 06c50fb0d44bb03dd4ea8795f9448379c5825d2765307b51f66905084c3ba541
+    url: https://dl.google.com/go/go1.18.3.linux-386.tar.gz
+    hash: 72b73da021397a3a1ce182c19d2a890a5346bfe80885d9dd7d1ff04ce6597938
   arm64:
-    url: https://dl.google.com/go/go1.17.6.linux-arm64.tar.gz
-    hash: 82c1a033cce9bc1b47073fd6285233133040f0378439f3c4659fe77cc534622a
+    url: https://dl.google.com/go/go1.18.3.linux-arm64.tar.gz
+    hash: beacbe1441bee4d7978b900136d1d6a71d150f0a9bb77e9d50c822065623a35a
 extract_dir: go
 pre_install: add_first_in_path "$env:HOME\go\bin" $false
 pre_uninstall: remove_from_path "$env:HOME\go\bin" $false
