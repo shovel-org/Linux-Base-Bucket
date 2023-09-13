@@ -1,17 +1,17 @@
-version: 8.5.2
+version: 18.9.0
 description: A prompt theme engine for any shell
 homepage: https://ohmyposh.dev
 license:
   identifier: GPL-3.0-only
   url: https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/COPYING
-changelog: https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v8.5.2
+changelog: https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v18.9.0
 architecture:
   64bit:
-    url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v8.5.2/posh-linux-amd64#/oh-my-posh
-    hash: b980885c6ca7e5ef825fc255e4c4babcd662b07254a38d978f76e32ca33affb9
+    url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v18.9.0/posh-linux-amd64#/oh-my-posh
+    hash: 5d327808c1817d8f47dcb8d0e5a8d13789afc8815a1f69360906b4c107277238
   arm64:
-    url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v8.5.2/posh-linux-arm64#/oh-my-posh
-    hash: 26e8920b22831eebc64f3fb73721450580cace57abfbfce94023a4ab05d804cb
+    url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v18.9.0/posh-linux-arm64#/oh-my-posh
+    hash: a4b355537f2386f820cce28c697114008263ffa0edf71708de44f5e3bc51ff41
 bin: oh-my-posh
 persist: themes
 checkver:
