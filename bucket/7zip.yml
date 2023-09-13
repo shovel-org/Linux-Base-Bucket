@@ -1,4 +1,4 @@
-version: "22.00"
+version: "23.01"
 description: A multi-format file archiver with high compression ratios
 homepage: https://www.7-zip.org
 license:
@@ -7,14 +7,14 @@ license:
 changelog: history.txt
 architecture:
   64bit:
-    url: https://www.7-zip.org/a/7z2200-linux-x64.tar.xz
-    hash: 5290409e7bbe2f133d0bd7e7482548678157ea2be276b0f9cb440600f4be9a2d
+    url: https://www.7-zip.org/a/7z2301-linux-x64.tar.xz
+    hash: 23babcab045b78016e443f862363e4ab63c77d75bc715c0b3463f6134cbcf318
   32bit:
-    url: https://www.7-zip.org/a/7z2200-linux-x86.tar.xz
-    hash: 3f3df18960079df961cfd34b20c32c673bbafb1228785c91d8446257ba3438ae
+    url: https://www.7-zip.org/a/7z2301-linux-x86.tar.xz
+    hash: a4cd3dba5dcb22d0543156258f77011a838a5402563011c2aca11c3562687857
   arm64:
-    url: https://www.7-zip.org/a/7z2200-linux-arm64.tar.xz
-    hash: be953c5fe67843d3ae5b30109da82d0ca8becd7087723f7529dbcb0b7170e1a8
+    url: https://www.7-zip.org/a/7z2301-linux-arm64.tar.xz
+    hash: 34e938fc4ba8ca6a835239733d9c1542ad8442cc037f43ca143a119bdf322b63
 pre_install: Rename-Item "$dir\7zzs" '7z'
 bin: 7z
 persist:
